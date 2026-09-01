@@ -147,7 +147,7 @@ img {
 }
 
 /* Empresas */
-.empresas {
+  .empresas {
     padding-top: 100px;
 }
 
@@ -189,7 +189,8 @@ img {
 .logo-zoom {
     width: 53px;
     height: auto;
-}/* Branding */
+}
+/* Branding */
 .branding {
     background: #1b9832;
     padding: 150px 0 0;
