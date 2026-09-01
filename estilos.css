@@ -1,0 +1,728 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: #1b9832;
+    color: #ffffff;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.contenedor {
+    width: min(1065px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+/* Header */
+.encabezado {
+    background: #1b9832;
+    padding-top: 48px;
+}
+
+.navegacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.enlaces-navegacion {
+    display: flex;
+    align-items: center;
+    gap: 46px;
+    font-size: 14px;
+}
+
+.enlaces-navegacion a:hover,
+.columna-footer a:hover {
+    opacity: 0.7;
+}
+
+.boton-menu {
+    display: none;
+    width: 24px;
+    height: 22px;
+    padding: 3px;
+    border: 0;
+    background: #000000;
+    cursor: pointer;
+}
+
+.boton-menu span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin: 2px 0;
+    background: #ffffff;
+}
+
+/* Hero */
+.hero {
+    background: #1b9832;
+    padding: 95px 0 0;
+}
+
+.hero-contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 515px;
+}
+
+.hero-texto {
+    width: 49%;
+}
+
+.hero-texto h1 {
+    font-size: 58px;
+    line-height: 1.03;
+    font-weight: 800;
+    letter-spacing: -1.6px;
+    text-shadow: 2px 2px 0 #343030;
+}
+
+.hero-texto p {
+    width: 500px;
+    max-width: 100%;
+    margin: 28px 0 38px;
+    font-size: 14px;
+    line-height: 1.55;
+    font-weight: 400;
+}
+
+.boton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 166px;
+    height: 48px;
+    padding: 0 25px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.boton-oscuro {
+    background: #3f3434;
+}
+
+.boton-verde {
+    background: #1b9832;
+}
+
+.hero-imagen {
+    width: 450px;
+    height: 450px;
+    border: 1px solid #151515;
+}
+
+.hero-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Empresas */
+.empresas {
+    background: #1b9832;
+    padding: 88px 0 0;
+}
+
+.texto-empresas {
+    margin-bottom: 12px;
+    text-align: center;
+    color: #4d9959;
+    font-size: 14px;
+}
+
+.logos-empresas {
+    width: 915px;
+    max-width: 100%;
+    min-height: 88px;
+    margin: 0 auto;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: #918a89;
+    border-radius: 7px;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.logo-spotify {
+    width: 140px;
+    height: auto;
+}
+
+.logo-slack {
+    width: 121px;
+    height: auto;
+}
+
+.logo-dropbox {
+    width: 151px;
+    height: auto;
+}
+
+.logo-zoom {
+    width: 100px;
+    height: auto;
+}
+
+/* Branding */
+.branding {
+    background: #1b9832;
+    padding: 150px 0 0;
+}
+
+.branding-contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.branding-imagen {
+    width: 450px;
+}
+
+.branding-imagen img {
+    width: 450px;
+    height: 450px;
+    object-fit: contain;
+}
+
+.branding-texto {
+    width: 425px;
+    padding-top: 5px;
+}
+
+.branding-texto h2,
+.titulo-seccion h2,
+.cta-texto h2 {
+    font-size: 45px;
+    line-height: 1.08;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.branding-texto p {
+    max-width: 410px;
+    margin-top: 36px;
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+/* Servicios */
+.servicios {
+    background: #1b9832;
+    padding: 105px 0 25px;
+}
+
+.titulo-seccion {
+    text-align: center;
+}
+
+.titulo-seccion h2 {
+    font-size: 44px;
+}
+
+.titulo-seccion p {
+    display: none;
+}
+
+.tarjetas-servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 58px;
+    margin-top: 125px;
+}
+
+.tarjeta {
+    min-height: 193px;
+    padding: 18px;
+    border-radius: 7px;
+    background: #ffffff;
+    color: #4c3d4d;
+}
+
+.icono-servicio {
+    width: 51px;
+    height: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    border-radius: 8px;
+}
+
+.icono-servicio img {
+    max-width: 34px;
+    max-height: 38px;
+}
+
+.servicio-web .icono-servicio {
+    background: #ffe0d7;
+}
+
+.servicio-desarrollo .icono-servicio {
+    background: #fcead3;
+}
+
+.servicio-app .icono-servicio {
+    background: #dceff7;
+}
+
+.tarjeta h3 {
+    font-size: 12px;
+    line-height: 1.25;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+}
+
+.tarjeta p {
+    margin-top: 9px;
+    color: #837a84;
+    font-size: 12px;
+    line-height: 1.55;
+}
+
+/* CTA */
+.cta {
+    min-height: 451px;
+    margin-top: 45px;
+    padding: 50px 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    border-radius: 17px;
+    background: #918a89;
+}
+
+.cta-imagen {
+    width: 48%;
+}
+
+.cta-imagen img {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.cta-texto {
+    width: 45%;
+}
+
+.cta-texto h2 {
+    font-size: 44px;
+}
+
+.cta-texto p {
+    max-width: 390px;
+    margin: 28px 0 29px;
+    font-size: 13px;
+    line-height: 1.65;
+}
+
+/* Footer */
+.pie-pagina {
+    position: relative;
+    min-height: 447px;
+    margin-top: 0;
+    padding: 103px 0 60px;
+    background: #746f6e;
+    border-radius: 0 0 7px 7px;
+}
+
+.pie-contenido {
+    display: grid;
+    grid-template-columns: 1.25fr 1fr 1fr 1fr;
+    gap: 80px;
+}
+
+.columna-footer h3 {
+    margin-bottom: 32px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.columna-footer p,
+.columna-footer li,
+.columna-footer a {
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.columna-footer li+li {
+    margin-top: 11px;
+}
+
+.copyright {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contenedor {
+        width: calc(100% - 24px);
+    }
+
+    .encabezado {
+        padding-top: 50px;
+    }
+
+    .navegacion {
+        width: calc(100% - 24px);
+    }
+
+    .logo {
+        font-size: 10px;
+    }
+
+    .enlaces-navegacion {
+        display: none;
+    }
+
+    .boton-menu {
+        display: block;
+        width: 18px;
+        height: 18px;
+        padding: 2px;
+    }
+
+    .boton-menu span {
+        height: 2px;
+        margin: 1px 0;
+    }
+
+    /* Hero móvil */
+    .hero {
+        padding: 105px 0 0;
+    }
+
+    .hero-contenido {
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-texto {
+        width: 100%;
+    }
+
+    .hero-texto h1 {
+        font-size: 20px;
+        line-height: 1.05;
+        letter-spacing: -0.5px;
+        text-shadow: 1px 1px 0 #343030;
+    }
+
+    .hero-texto p {
+        width: 310px;
+        max-width: 100%;
+        margin: 12px auto 14px;
+        font-size: 8px;
+        line-height: 1.55;
+    }
+
+    .boton {
+        min-width: 142px;
+        width: 142px;
+        height: 23px;
+        padding: 0 10px;
+        border-radius: 4px;
+        font-size: 7px;
+    }
+
+    .boton-oscuro {
+        background: #000000;
+    }
+
+    .hero-imagen {
+        width: 360px;
+        height: 360px;
+        margin-top: 165px;
+        border: 0;
+    }
+
+    .hero-imagen img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    /* Empresas móvil */
+    .empresas {
+        padding-top: 100px;
+    }
+
+    .texto-empresas {
+        margin-bottom: 10px;
+        font-size: 12px;
+        /* Aumentado a un tamaño legible */
+        text-align: center;
+    }
+
+    .logos-empresas {
+        display: flex;
+        /* Obligatorio para que 'gap' y 'align-items' funcionen */
+        flex-wrap: wrap;
+        /* Permite que los logos bajen de línea si no caben */
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+        max-width: 380px;
+        min-height: 85px;
+        margin: 0 auto;
+        padding: 0 18px;
+        border-radius: 6px;
+    }
+
+    .logo-spotify {
+        width: 68px;
+        height: auto;
+    }
+
+    .logo-slack {
+        width: 62px;
+        height: auto;
+    }
+
+    .logo-dropbox {
+        width: 75px;
+        height: auto;
+    }
+
+    .logo-zoom {
+        width: 53px;
+        height: auto;
+    }
+
+    /* Branding móvil */
+    .branding {
+        padding-top: 92px;
+    }
+
+    .branding-contenido {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .branding-texto {
+        order: 1;
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .branding-texto h2 {
+        font-size: 20px;
+        line-height: 1.05;
+        letter-spacing: -0.3px;
+    }
+
+    .branding-texto p {
+        width: 360px;
+        max-width: 100%;
+        margin: 22px auto 0;
+        font-size: 7px;
+        line-height: 1.6;
+    }
+
+    .branding-imagen {
+        order: 2;
+        width: 335px;
+        height: 335px;
+        margin: 45px auto 0;
+    }
+
+    .branding-imagen img {
+        width: 335px;
+        height: 335px;
+        object-fit: contain;
+    }
+
+    /* Servicios móvil */
+    .servicios {
+        padding: 155px 0 0;
+    }
+
+    .titulo-seccion h2 {
+        width: 310px;
+        margin: 0 auto;
+        font-size: 20px;
+        line-height: 1.05;
+        letter-spacing: -0.3px;
+    }
+
+    .titulo-seccion p {
+        display: block;
+        width: 360px;
+        max-width: 100%;
+        margin: 20px auto 0;
+        font-size: 7px;
+        line-height: 1.6;
+    }
+
+    .tarjetas-servicios {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        width: 310px;
+        margin: 45px auto 0;
+    }
+
+    .tarjeta {
+        width: 310px;
+        min-height: 190px;
+        padding: 18px 20px;
+        border-radius: 7px;
+    }
+
+    .icono-servicio {
+        width: 51px;
+        height: 51px;
+        margin-bottom: 16px;
+        border-radius: 8px;
+    }
+
+    .icono-servicio img {
+        max-width: 34px;
+        max-height: 38px;
+    }
+
+    .tarjeta h3 {
+        font-size: 10px;
+        line-height: 1.25;
+    }
+
+    .tarjeta p {
+        margin-top: 9px;
+        font-size: 8px;
+        line-height: 1.5;
+    }
+
+    .servicio-app {
+        order: 3;
+    }
+
+    .servicio-desarrollo {
+        order: 1;
+    }
+
+    .servicio-web {
+        order: 2;
+    }
+
+    /* CTA móvil */
+    .cta {
+        width: 380px;
+        max-width: 100%;
+        min-height: 349px;
+        margin: 22px auto 0;
+        padding: 60px 30px 45px;
+        display: block;
+        text-align: center;
+        border-radius: 13px;
+    }
+
+    .cta-imagen {
+        display: none;
+    }
+
+    .cta-texto {
+        width: 100%;
+    }
+
+    .cta-texto h2 {
+        font-size: 20px;
+        line-height: 1.05;
+        letter-spacing: -0.4px;
+    }
+
+    .cta-texto p {
+        width: 300px;
+        max-width: 100%;
+        margin: 30px auto 25px;
+        font-size: 8px;
+        line-height: 1.6;
+    }
+
+    .cta .boton {
+        background: #000000;
+    }
+
+    /* Footer móvil */
+    .pie-pagina {
+        position: relative;
+        min-height: 1140px;
+        margin-top: 18px;
+        padding: 57px 0 75px;
+        border-radius: 0 0 4px 4px;
+    }
+
+    .pie-contenido {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 53px;
+        text-align: center;
+    }
+
+    .columna-footer h3 {
+        margin-bottom: 23px;
+        font-size: 9px;
+    }
+
+    .columna-footer p,
+    .columna-footer li,
+    .columna-footer a {
+        font-size: 7px;
+        line-height: 1.7;
+    }
+
+    .columna-footer li+li {
+        margin-top: 10px;
+    }
+
+    .copyright {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 29px;
+        text-align: center;
+        font-size: 6px;
+        color: #ffffff;
+    }
+}
