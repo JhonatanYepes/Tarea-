@@ -147,49 +147,43 @@ img {
 }
 
 /* Empresas */
-  .empresas {
-    padding-top: 100px;
-}
+ .empresas {
+        padding-top: 100px;
+    }
 
-.texto-empresas {
-    margin-bottom: 10px;
-    font-size: 12px; /* Aumentado a un tamaño legible */
-    text-align: center;
-}
+    .texto-empresas {
+        margin-bottom: 10px;
+        font-size: 8px;
+    }
 
-.logos-empresas {
-    display: flex; /* Obligatorio para que 'gap' y 'align-items' funcionen */
-    flex-wrap: wrap; /* Permite que los logos bajen de línea si no caben */
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    width: 100%;
-    max-width: 380px;
-    min-height: 85px;
-    margin: 0 auto;
-    padding: 0 18px;
-    border-radius: 6px;
-}
+    .logos-empresas {
+        width: 380px;
+        max-width: 100%;
+        min-height: 85px;
+        padding: 0 18px;
+        gap: 12px;
+        border-radius: 6px;
+    }
 
-.logo-spotify {
-    width: 68px;
-    height: auto;
-}
+    .logo-spotify {
+        width: 68px;
+        max-width: none;
+    }
 
-.logo-slack {
-    width: 62px;
-    height: auto;
-}
+    .logo-slack {
+        width: 62px;
+        max-width: none;
+    }
 
-.logo-dropbox {
-    width: 75px;
-    height: auto;
-}
+    .logo-dropbox {
+        width: 75px;
+        max-width: none;
+    }
 
-.logo-zoom {
-    width: 53px;
-    height: auto;
-}
+    .logo-zoom {
+        width: 53px;
+        max-width: none;
+    }
 /* Branding */
 .branding {
     background: #1b9832;
